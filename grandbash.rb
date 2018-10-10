@@ -21,7 +21,7 @@ def off_by_one_number(my_n, bash_n)
 	end
 	i += 1
 end
-	p counter == my_n.length - 1
+	 counter == my_n.length - 1
 end
  puts off_by_one_number("1234", "1233")
 
