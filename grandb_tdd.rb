@@ -39,9 +39,14 @@ class Test_grandbash < Minitest::Test
 		bash_n = ["6767", "3232", "2342", "6565"]
 		assert_equal(false, off_by_one_number(my_n, bash_n))
 	end
-	def test_off_by_one_arr
+	def test_off_by_one_num
 		my_n = "5555"
 		bash_n = ["2322", "5555", "5152", "6565"]
+		assert_equal(false, off_by_one_number(my_n, bash_n))
+	end
+	def test_9
+		my_n = "2345"
+		bash_n = ["2333", "5123", "7676", "2345"]
 		assert_equal(false, off_by_one_number(my_n, bash_n))
 	end
 end
